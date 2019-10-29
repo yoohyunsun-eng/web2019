@@ -4,8 +4,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>css</title>
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
+    <style>
+    	div{color:red;}/*tagselector*/
+    	div.box{color:blue;} /*class selector
+    	.box{color:blue;}*/
+    	div#vbox{color:black;} /*id selector* #vbox{color:black;}*/
 
+    </style>
 </head>
 <body>
 	<h3>스타일 맛보기</h3>
@@ -25,5 +31,23 @@
 	(div>lorem2)+(div>lorem2)
 	<div>Lorem ipsum.</div>
 	<div>Lorem ipsum.</div> -->
+
+
+	<div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+	<div class="box">Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+	<div class="box active yoo">Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+	<div class="box" id="vbox">Lorem ipsum.</div>
+	<div>Lorem ipsum.</div>
+
+
+	div.box#vbox1>a[#]>a{menu}
+	<div class="box" id="vbox1"><a href="#"><a href="">menu</a></a></div>
+	div.box#vbox1>a.yoo[#]>a{menu}
+	<div class="box" id="vbox1"><a href="#" class="yoo"><a href="">menu</a></a></div>
 </body>
 </html>
