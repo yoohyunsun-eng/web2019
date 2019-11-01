@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float menu</title>
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style:none;}
+		div.container{background-color: #ff1f45;}
+		div.wrap{
+			width:800px;
+			height:50px;
+			/*background-color:blue;
+*/		    margin:0 auto;
+		}
+		
+		div.wrap > ul:after{content:"";display:block;clear:both;}
+		div.wrap > ul > li{
+			float:left;width:160px;
+			/*background-color:skyblue;*/
+			text-align:center;
+			line-height:50px;cursor:pointer;
+			color:#fff;
+		}
+		div.wrap > ul > li:hover{background-color: #ffaa45;}
+
+        a{text-decoration:none;}
+        a:link,a:visited{color:#FFF;}
+		div.con_wrap{background-color: #000;}
+		div.wrapper{
+			width:800px;
+			height: 50px;
+			margin:0 auto;
+		}
+		div.wrapper > ul:after{content:"";clear:both;display:block;}
+		div.wrapper > ul > li{float:left;width:20px; background-color:grey;}
+		div.wrapper > ul > li >a{display:block;text-align:center;color:black;line-height: 50px;
+		}
+		div.wrapper > ul > li > a:hover{background-color:black;color:white;}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="wrap">
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+				<li>menu4</li>
+				<li>menu5</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="con_wrap">
+		<div class="wrapper">
+			<!-- ul>li*5>a[#]>{MENU$} -->
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
