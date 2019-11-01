@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<style>
+		/*css reset*/
+		*{margin: 0;padding: 0;}
+		li{list-style: none;}
+		a{text-decoration: none;}
+		a:link,a:visited{color:#fff;}
+
+        header#hd{width:1000px;height: 100px;background-color: #000;margin:0 auto;position: relative;}
+        #hd > h1{color:white;text-align:center;}
+
+        nav.navbar{width: 1000px;background-color: #000;position: absolute;bottom: 0;}
+        nav.navbar>ul:after{content:"";display: block;clear: both;}
+        nav.navbar>ul>li{float:left;width: 200px;}
+        nav.navbar>ul>li>a{display: block;text-align:center;line-height:40px;}
+        nav.navbar>ul>li>a:hover{background-color:grey;color:black;}
+	</style>
+</head>
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<nav class="navbar">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
