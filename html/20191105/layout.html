@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../bxslider/css/reset.css">
+	<link rel="stylesheet" href="../bxslider/css/jquery.bxslider.css">
+	<script src="../bxslider/js/jquery-3.1.1.min.js"></script>
+	<script src="../bxslider/js/jquery.bxslider.js"></script>
+
+	<style>
+		header#hd{width: 1000px;height: 120px;margin: 0 auto;background-color:skyblue;position:relative;}
+		#hd>h1{line-height:110px;}
+        #hd>nav.navwrap{width: 800px;height: 40px;background-color:pink;position: absolute;bottom:0;left: 200px}
+        .navwrap>ul:after{content:"";display: block;clear: both;}
+        .navwrap>ul>li{float: left;width: 160px;border-right:1px solid #000;
+        	box-sizing:border-box}
+        /*.navwrap>ul>li:first-child{border-left:1px solid #000;}*/
+        .navwrap>ul>li:last-child{border-right:none;}
+
+        .navwrap>ul>li>a{text-align: center;line-height: 40px;display: block;}
+        .navwrap>ul>li>a:hover{background-color:skyblue;}
+
+        #hd>div.navwrap1{width: 400px;height: 40px;background-color:pink;position: absolute;top:0;left:600px;}
+        .navwrap1>ul:after{content:"";display: block;clear: both;}
+        .navwrap1>ul>li{float: left;width: 100px;}
+        .navwrap1>ul>li>a{display: block;text-align: center;line-height: 40px;}
+        .navwrap1>ul>li>a:hover{background-color:skyblue;}
+        div.visual{width: 1000px;margin: 0 auto;}
+
+        .bx-wrapper {
+    		-moz-box-shadow: none;
+    		-webkit-box-shadow: none;
+    		box-shadow: none;
+   			border: none;
+    		background: #fff;}
+    	
+    	.bx-wrapper .bx-pager{
+    		bottom:30px;}
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true});
+		});
+	</script>
+</head>
+<body>
+	<header id="hd">
+		<h1>LOGO</h1>
+		<div class="navwrap1">
+			<ul>
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+			</ul>
+		</div>
+		<nav class="navwrap">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="visual">
+		<div class="slider">
+			<div><img src="../images/pc01.jpg" alt="이미지1"></div>
+			<div><img src="../images/pc02.jpg" alt="이미지2"></div>
+			<div><img src="../images/pc03.jpg" alt="이미지3"></div>
+			
+		</div>
+	</div>
+</body>
+</html>
