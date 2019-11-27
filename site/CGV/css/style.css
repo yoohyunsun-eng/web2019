@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body{background-color: #fdfcf0;}
+
+/*header*/
+#hd{width: 100%;position: relative;}
+#hd #hdSlider{width: 100%;}
+
+.bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border:none;
+    background:none;
+    margin-top:0;min-width: 1260px;
+}
+.bx-wrapper .bx-pager{
+    bottom: 40px;
+}
+#hd .menuWrap{position:fixed;z-index:1;width: 100%;height: 120px;background:url(../images/bg_header.gif);}
+#hd .menuWrap .menu{
+	width: 1260px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#hd>.menuWrap>.menu>a{position: absolute;top: 25px;left: 40px;}
+#hd>.menuWrap>.menu>.main_menuWrap{width: 500px;position: absolute;top: 60px;right: 400px;}
+#hd>.menuWrap>.menu>.main_menuWrap>ul>li{float: left;width: 125px;}
+#hd>.menuWrap>.menu>.main_menuWrap>ul>li>a{text-align: center;display: block;font-size:22px;color:#000;font-style:bold;}
+#hd>.menuWrap>.menu>.main_menuWrap .sub-wrap{display: none;}
+#hd>.menuWrap>.menu>.main_menuWrap ul li:hover .sub-wrap{position: relative;display: block;margin-top: 10px;display: block;width: 140px;height: 180px;background-color: #222222;}
+#hd>.menuWrap>.menu>.main_menuWrap ul li:hover .submenu{position: absolute;top: 3px;left: 3px;width:130px;height: 170px;border: 2px solid #828282; color:white;}
+#hd>.menuWrap>.menu>.main_menuWrap ul li:hover .submenu>ul{padding:10px 8px}
+#hd>.menuWrap>.menu>.main_menuWrap ul li:hover .submenu a{color:white;display: block;line-height: 30px;}
+#hd>.menuWrap>.menu>.main_menuWrap ul li:hover .sub-wrap:after{
+            content:"";
+            position: absolute;
+            top: -10px;right: 65px;
+            transform:translateY(-50%);
+            border-style:solid;
+            border-width:10px;
+            border-color:transparent transparent #222222 transparent;
+            display: block;}
+#hd>.menuWrap>.menu>img{position: absolute;top: 28px;right: 530px;}
+
+#hd .container_wrap{width: 1260px;height: 1260px;margin: 0 auto;}
+#hd .container_wrap>ul>li{float: left;height: 315px;width: 25%;}
+#hd>.container_wrap>ul>li:nth-child(1){height: 630px;width: 25%;background-color:#fdfcf0;}
+#hd>.container_wrap>ul>li>.banner01>.moviechart{height: 100px;width: 315px;background-color: #e71a0f;border: 8px solid #000;box-sizing:border-box;display: block;}
+#hd>.container_wrap>ul>li>.banner01>.moviechart>p{color:white;font-style:bold;font-size:25px;margin-top: 25px;margin-left: 95px;}
+#hd>.container_wrap>ul>li>.banner01>.chart{width: 290px;height: 400px;margin-left:10px;margin-top:30px;position: relative;}
+#hd>.container_wrap>ul>li>.banner01>.chart>ul>li{line-height:50px;}
+#hd>.container_wrap>ul>li>.banner01>.chart>ul>li:hover{text-indent:3px;border: 2px solid #000;display: block;}
+#hd>.container_wrap>ul>li>.banner01>.chart>ul>li>a>span{position: absolute;right:8px}
+
+#hd>.container_wrap>ul>li>.banner01>.book{height: 100px;width: 315px;background-color: #e71a0f;border: 8px solid #000;box-sizing:border-box;display: block;margin-bottom: 0;}
+#hd>.container_wrap>ul>li>.banner01>.book>a>p{color:white;font-style:bold;font-size:25px;margin-top: 25px;margin-left: 95px;}
+#hd>.container_wrap>ul>li>.banner01>.book>a{display: block;height: 200px;width: 315px;}
+
+#hd .container_wrap>ul>li.banner02{background: url(../images/fordvferarri.jpg);}
+#hd .container_wrap>ul>li:nth-child(2){height: 630px;width: 25%;background-color: #0f0;}
+#hd .container_wrap>ul>li:nth-child(3){background-color: #00f;}
+#hd .container_wrap>ul>li:nth-child(4){background-color: #000;}
+#hd .container_wrap>ul>li:nth-child(5){width: 50%;height: 315px;background-color: #ff0;}
+#hd .container_wrap>ul>li:nth-child(6){background-color: #0ff;}
+#hd .container_wrap>ul>li:nth-child(7){width: 50%;height: 315px;background-color: #fff;}
+#hd .container_wrap>ul>li:nth-child(8){background-color: grey;}
+#hd .container_wrap>ul>li:nth-child(9){background-color: skyblue;}
+#hd .container_wrap>ul>li:nth-child(10){background-color: pink;}
+#hd .container_wrap>ul>li:nth-child(11){background-color: orange;}
+#hd .container_wrap>ul>li:nth-child(12){background-color: brown;} 
+
