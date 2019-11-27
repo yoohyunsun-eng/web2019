@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>bxslider</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<!-- script:src -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider = $(".slider").bxSlider({
+							// mode:'vertical',
+							auto:true,
+							pagerCustom:".bx-pager",
+							controls:false
+						});
+				$(".prevBtn").click(function(){
+					mySlider.goToPrevSlide();
+				});
+				$(".nextBtn").click(function(){
+					mySlider.goToNextSlide();
+				});	
+		});
+	</script>
+	<style>
+		.wrapper{width: 1260px;margin: 0 auto;position: relative;}
+		.bx-wrapper {
+    		-moz-box-shadow:none;
+    		-webkit-box-shadow: none;
+    		box-shadow:none;
+    		border:none;
+    		background:none;
+    		margin-bottom: 0;
+		}
+		.slider_pager{position: absolute;width: 100%;
+			bottom: 20px;}
+		.bx-pager{}
+		.bx-pager a{
+			display: block;
+			width: 25%;
+			float: left;
+			background-color:#f00;
+			text-align: center;
+			line-height: 40px;
+			color:white;
+		}
+		.bx-pager a:hover{background-color: #00f;}
+		.bx-pager a.active{background-color: #00f;}
+		.sliderWrap li.sliderView1 .txtWrap{
+			_background-color: #ff0;
+			position: absolute;
+			top: 200px;right: 100px;
+			width: 500px;height: 100px;
+			color:white;
+		}
+		li.sliderView1 .txtWrap h2{font-size:2.3em;margin-bottom: 15px;}
+		li.sliderView1 .txtWrap h2:after{
+			content:"";
+			width: 500px;
+			height: 2px;
+			background-color: #fff;
+			display: block;
+			margin-top: 15px
+		}
+		li.sliderView1 .txtWrap p{margin-bottom: 15px;}
+		li.sliderView1 .txtWrap .btn{
+			width: 200px;
+			line-height: 40px;
+			text-align: center;
+			border: 1px solid #fff;
+			cursor:pointer;
+			transition:0.3s;
+			border-radius:20px;
+			background-color:rgba(0,0,0,0.3);
+			font-weight:bold;
+		}
+		li.sliderView1 .txtWrap .btn:hover{background-color: #fff;color:#FFC30B;}
+
+		.sliderWrap{position: relative;}
+		.sliderWrap .prevBtn,
+		.sliderWrap .nextBtn{position: absolute;top: 50%;margin-top:-45px}
+		.sliderWrap .prevBtn{position: absolute;left: 10px;}
+		.sliderWrap .nextBtn{position: absolute;right: 10px;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sliderWrap">
+			<ul class="slider">
+				<li class="sliderView1">
+					<img src="images/main_slider01.jpg" alt="slider1">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음1</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odit.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="sliderView1">
+					<img src="images/main_slider01.jpg" alt="slider2">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odit.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="sliderView1">
+					<img src="images/main_slider01.jpg" alt="slider3">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음3</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odit.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+				<li class="sliderView1">
+					<img src="images/main_slider01.jpg" alt="slider4">
+					<div class="txtWrap">
+						<h2>사랑과 행복을 나누는 마음4</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, odit.</p>
+						<div class="btn">바로가기</div>
+					</div>
+				</li>
+			</ul>
+			<div class="prevBtn"><img src="images/btn_prev.png" alt=""></div>
+			<div class="nextBtn"><img src="images/btn_next.png" alt=""></div>
+		</div>
+		<div class="slider_pager">
+			<div class="bx-pager clearfix">
+				<a href="#" data-slide-index="0">menu1</a>
+				<a href="#" data-slide-index="1">menu2</a>
+				<a href="#" data-slide-index="2">menu3</a>
+				<a href="#" data-slide-index="3">menu4</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
