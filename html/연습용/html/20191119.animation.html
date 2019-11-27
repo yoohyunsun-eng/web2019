@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		.carlogo{height: 500px;background-color: #000;margin: 0 auto;}
+		ul{width: 1200px;margin: 0 auto;}
+		ul:after{content:"";display: block;clear: both;}
+		ul>li{float: left;width: 300px;text-align: center;margin-top:120px;}
+		.card01{
+			width: 225px;height: 225px;
+			background-color: #000;
+			position: relative;
+			border-radius:112.5px;
+			overflow:hidden;
+		}
+		.card01 img{display: block;}
+		.card01 .card-body{
+			width: 100%;height: 100%;
+			background-color:rgba(0,0,0,0.5);
+			position: absolute;
+			top: -300px;
+			transition:0.3s;
+
+		}
+		.card01 .card-body .card-txt{
+			color:white;
+			position: absolute;
+			_background-color: #fff;
+			top: 50%;margin-top:-10px;width: 100%;
+			text-align: center;
+			font-weight: bold;
+		}
+		.card01:hover .card-body{
+			top:0;left: 0;
+		}
+		.card01:hover img{transform:scale(1.2,1.2);}
+
+	</style>
+</head>
+<body>
+	<div class="carlogo">
+		<ul>
+			<li>
+				<a href="#">
+					<div class="card01">
+						<img src="../images/audi.png" alt="">
+						<div class="card-body">
+							<div class="card-txt">
+								아우디
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="card01">
+						<img src="../images/benz.png" alt="">
+						<div class="card-body">
+							<div class="card-txt">
+								벤츠
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="card01">
+						<img src="../images/bmw.jpg" alt="">
+						<div class="card-body">
+							<div class="card-txt">
+								BMW
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="card01">
+						<img src="../images/audi.png" alt="">
+						<div class="card-body">
+							<div class="card-txt">
+								아우디
+							</div>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+	<div class="circleWrap">
+		<div class="circle"></div>
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+	</div>
+
+			.circleWrap{width: 100px;height: 100px;position: relative;left: 300px;top: 200px;}
+		.circleWrap .circle{width: 100px;height: 100px;position: absolute;top: 0;background-color: #691F91;}
+		.circleWrap .circle1{width: 100px;height: 100px;position: absolute;top: 0;background-color: #7B25AA;transform:translate(0,0)}
+		.circleWrap .circle2{width: 100px;height: 100px;position: absolute;top: 0;background-color: #8A29BE;}
+		.circleWrap .circle3{width: 100px;height: 100px;position: absolute;top: 0;background-color: #8527B7;}
+		.circleWrap .circle4{width: 100px;height: 100px;position: absolute;top: 0;background-color: #B335F7;}
+
+		.circleWrap:hover .circle1{transform:translate(0,0) rotate(-30deg);}
