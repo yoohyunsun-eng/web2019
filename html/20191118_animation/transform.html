@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{background-image: url(../images/bg_grid.gif);}
+		div{width: 200px;height: 100px;background-color:yellow;}
+		/*div.box2{
+			position: absolute;
+			transform:translate(100px,50px) scale(1,1) rotate(0);
+			transition:0.3s;
+		}
+		div.box2:hover{transform:translate(150px,100px) scale(1.2,1.2) rotate(5deg);}*/
+
+		.boxWrap{width: 200px;height: 200px;background-color:green;position: relative;left: 200px;top: 100px;}
+		.boxWrap .box{
+			width: 200px;
+			height: 200px;
+			transition:0.3s;
+			transform-origin:50 50;
+		}
+		.boxWrap .box1{
+			width: 200px;
+			height: 200px;
+			transition:0.3s;
+			background-color:orange;
+			position: absolute;top: 0;
+		}
+		.boxWrap .box2{
+			width: 200px;
+			height: 200px;
+			transition:0.3s;
+			background-color:blue;
+			position: absolute;top: 0;left: 0;
+		}
+		.boxWrap:hover .box{
+			
+			transform:translate(0,0) rotate(-30deg);
+		}
+		.boxWrap:hover .box1{
+			
+			transform:translate(0,0) rotate(-20deg);
+		}
+		.boxWrap:hover .box2{
+			
+			transform:translate(0,0) rotate(-10deg);
+		}
+
+		.circleWrap{width: 100px;height: 100px;position: relative;left: 300px;top: 200px;background-color: #000;border-radius:50px}
+		.circleWrap .circle{width: 100px;height: 100px;position: absolute;top: 0;background-color: #1D0033;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle1{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #1D0039;transition:0.20s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle2{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #240040;transition:0.18s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle3{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #490080;transition:0.16s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle4{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #492378;transition:0.14s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle5{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #5E2C99;transition:0.12s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle6{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #7638C2;transition:0.10s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle7{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #8C43E6;transition:0.1s;transform-origin:100% 0;border-radius:50px}
+		.circleWrap .circle8{width: 100px;height: 100px;position: absolute;top: 0;left: 0;background-color: #9C4AFF;transition:0.1s;transform-origin:100% 0;border-radius:50px}
+
+		.circleWrap:hover .circle1{transform:translate(0,0) rotate(-40deg);}
+		.circleWrap:hover .circle2{transform:translate(0,0) rotate(-80deg);}
+		.circleWrap:hover .circle3{transform:translate(0,0) rotate(-120deg);}
+		.circleWrap:hover .circle4{transform:translate(0,0) rotate(-160deg);}
+		.circleWrap:hover .circle5{transform:translate(0,0) rotate(-200deg);}
+		.circleWrap:hover .circle6{transform:translate(0,0) rotate(-240deg);}
+		.circleWrap:hover .circle7{transform:translate(0,0) rotate(-280deg);}
+		.circleWrap:hover .circle8{transform:translate(0,0) rotate(-320deg);}
+	</style>
+</head>
+<body>
+	<div class="box1">박스1</div>
+	<div class="box2">박스2</div>
+
+	<div class="boxWrap">
+		<div class="box">테스트</div>
+		<div class="box1">테스트</div>
+		<div class="box2">테스트</div>
+	</div>
+
+	<div class="circleWrap">
+		<div class="circle"></div>
+		<div class="circle1"></div>
+		<div class="circle2"></div>
+		<div class="circle3"></div>
+		<div class="circle4"></div>
+		<div class="circle5"></div>
+		<div class="circle6"></div>
+		<div class="circle7"></div>
+		<div class="circle8"></div>
+	</div>
+</body>
+</html>
