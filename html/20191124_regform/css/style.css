@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body{font-family: 'Nanum Gothic', sans-serif;}
+fieldset{border: 0;}
+.blind,legend{
+	display: block;
+	position: absolute;
+	top: -9999px;left:0
+}
+
+
+body{background-color:#F5F6F7;}
+#wrap{width: 460px;margin: 0 auto;}
+#header h1.logo{
+	width: 240px;
+	margin: 0 auto;
+	background: url(../images/pc_sp_join.png) no-repeat 0 -106px;
+}
+#header{
+	padding:60px 0 65px 0;
+	/*background-color: #ddd;*/
+}
+#header h1.logo a{
+	display: block;
+	height: 44px;
+	text-indent:-999999px;
+}
+
+.container fieldset{
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin-bottom:10px;
+}
+.container .field{
+	border-bottom:1px solid #f0f0f0;
+	position: relative;
+}
+.container .inp-field{
+	width: 350px;
+	height: 49px;
+	border:0 none;
+	color:#999;
+	font-size:14px;
+	text-indent:12px;
+}
+.container .ico{
+	right: 10px;top: 0px;
+	position: absolute;
+	display: block;
+	width: 97px;height: 48px;
+	background:url(../images/ico_join3.png) no-repeat;
+	text-indent: -9999px;
+}
+.container .ico.mail{background-position: 0 -47px;}
+.container .ico.pass{background-position: 0px -466px;}
+.container .ico.pass2{background-position: 0px -515px;}
+
+.container .field.radio{
+	position: relative;
+	height: 49px;
+}
+.container .field.radio input{
+	position: relative;
+	left: 20px;top: 10px;
+}
+.container .field.radio label{
+	position: absolute;
+
+	display: block;
+	width: 212px;height: 34px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	top: 8px;
+	z-index:1;
+	cursor:pointer;
+}
+.container .field.radio label.male{left: 15px;}
+.container .field.radio label.female{right: 15px;}
+
+
+.container .field.birth label{
+	float: left;
+	width: 53px;height: 49px;
+	line-height: 49px;text-align: center;
+	color:#333;
+}
+.container .field.birth input,
+.container .field.confirm input
+{float: left;}
+.container .field.birth .field-wall,
+.container .field.confirm .field-wall
+{
+	float: left;
+	width: 0;height: 29px;
+	border-right: 1px solid #aaa;
+	margin-top:10px;text-indent:-999999px;
+}
+.container .field.birth select,
+.container .field.confirm select
+{
+	float: left;
+	width: 110px;
+	height: 29px;
+	font-size:15px;
+	border:0 none;
+	margin-top:10px;
+	margin-left:9px;
+	margin-right:8px;
+	background: url(../images/sel_arr.gif) no-repeat 100% center;
+	-webkit-appearance:none;
+}
+.container .field.confirm .btn-click{width: 99px;height: 31px;border: 1px solid #dcdcdc;
+background-color: #fff;color:#333;margin-top:11px;margin-left:13px;}
+
+.container .btn_area{}
+.container .btn_area .btn-submit{
+	width: 100%;
+	height: 59px;
+	background: #1fbc02 url(../images/btn_join2.gif) no-repeat 50% -2px;
+	border: 1px solid #1fbc02;
+	border-radius:5px;
+	text-indent: -999999px;
+	cursor:pointer;
+}
+
+.w130{width: 130px !important;}
+.w145{width: 145px !important;}
+.w205{width: 205px !important;}
+.w330{width: 330px !important;}
+.w458{width: 458px !important;}
