@@ -57,7 +57,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #hd .container_wrap>ul>li.banner02 .slider02_wrap .view{width: 315px;}
 #hd .container_wrap>ul>li:nth-child(2){height: 630px;width: 25%;background-color: #0f0;}
 #hd .container_wrap>ul>li>.banner03{}
-#hd .container_wrap>ul>li .bn-card img{padding-top:75px;padding-left:105px;display: block;margin-bottom:30px;}
+#hd .container_wrap>ul>li .bn-card img{padding-top:75px;margin: 0 auto;display: block;margin-bottom:30px;}
 #hd .container_wrap>ul>li .bn-card h2{padding-left:115px;color:black;font-style:bold;font-size:20px;}
 #hd .container_wrap>ul>li:nth-child(3){background-color: #CDB996;}
 #hd .container_wrap>ul>li:nth-child(4){background-color: #B29F78;}
@@ -156,10 +156,15 @@ section#sub_sectionWrap .tab_wrap ul li a{color:#C8C197;font-style:bold;font-siz
 section#sub_sectionWrap .tab_wrap ul li:nth-child(1){width: 175px;height: 50px;background:url(../images/btn_st02_on.gif);}
 section#sub_sectionWrap .tab_wrap ul li:nth-child(2){width: 175px;height: 50px;background-color: #efebdb;}
 
-#sub_sectionWrap .movie_wrap{width: 1260px;margin: 0 auto;}
-#sub_sectionWrap .movie_wrap ul li{float: left;margin-right:15px;width: 303.75px;height: 420px;}
-#sub_sectionWrap .movie_wrap ul li:last-child{margin-right:0;}
-.movie_wrap .card{border: 1px solid #000;}
-.movie_wrap .card .card-body h2{padding:5px 5px 5px 5px;display: block;text-align: center;}
+#sub_sectionWrap .movie_wrap{width: 1260px;margin: 0 auto;margin-bottom:30px;}
+#sub_sectionWrap .movie_wrap ul li{float: left;margin-right:14px;width: 304px;overflow:hidden;margin-bottom:30px;}
+#sub_sectionWrap .movie_wrap ul li:nth-child(4){margin-right:0;}
+#sub_sectionWrap .movie_wrap ul li:nth-child(8){margin-right:0;}
+#sub_sectionWrap .movie_wrap ul li:nth-child(12){margin-right:0;}
+.movie_wrap .card{background-color: #fff;border: 1px solid #dedede;}
+.movie_wrap .card .card-body h2{padding:5px 15px;display: block;border-bottom: 1px solid #dedede;font-size:15px;}
+.movie_wrap .card .card-body p{padding:5px 15px;display: block;font-size:13px;color:#777;}
+.movie_wrap .card img{display: block;width: 304px;height: 420px;}
 
-.movie_wrap .card .card-body p{padding:5px 5px 5px 5px;display: block;text-align: center;}
+.adbanner_wrap{width: 1260px;margin: 0 auto;}
+.adbanner_wrap .adbanner img{margin-bottom:30px;}
