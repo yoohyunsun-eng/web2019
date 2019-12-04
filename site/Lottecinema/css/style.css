@@ -157,7 +157,9 @@ section#sub_sectionWrap .tab_wrap ul li:nth-child(1){width: 175px;height: 50px;b
 section#sub_sectionWrap .tab_wrap ul li:nth-child(2){width: 175px;height: 50px;background-color: #efebdb;}
 
 #sub_sectionWrap .movie_wrap{width: 1260px;margin: 0 auto;}
-#sub_sectionWrap .movie_wrap ul{}
-#sub_sectionWrap .movie_wrap ul li{float: left;margin-right:15px;width: 303.75px;height: 400px;background-color:#000;} 
-#sub_sectionWrap .movie_wrap ul li:last-child{margin-right:0px;} 
-#sub_sectionWrap .movie_wrap ul li a{display: block;width: 303.75px;height: 400px;}
+#sub_sectionWrap .movie_wrap ul li{float: left;margin-right:15px;width: 303.75px;height: 420px;}
+#sub_sectionWrap .movie_wrap ul li:last-child{margin-right:0;}
+.movie_wrap .card{border: 1px solid #000;}
+.movie_wrap .card .card-body h2{padding:5px 5px 5px 5px;display: block;text-align: center;}
+
+.movie_wrap .card .card-body p{padding:5px 5px 5px 5px;display: block;text-align: center;}
