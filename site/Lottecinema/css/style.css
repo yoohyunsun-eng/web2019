@@ -32,6 +32,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #hd>.menuWrap>.menu>a{position: absolute;top: 15px;left: 10px;}
 #hd>.menuWrap>.menu>.main_menuWrap{width: 700px;position: absolute;top: 40px;right: 0px;}
 #hd>.menuWrap>.menu>.main_menuWrap>ul>li{float: left;width: 116.67px;}
+#hd>.menuWrap>.menu>.main_menuWrap>ul>li.on{background:url(../images/bullet02.gif) no-repeat center bottom;font-weight:bold;}
 #hd>.menuWrap>.menu>.main_menuWrap>ul>li>a{text-align: center;display: block;font-size:22px;color:#000;font-style:bold;}
 
 
@@ -67,8 +68,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #hd .container_wrap>ul>li:nth-child(8){background-color: #D9BB62;}
 #hd .container_wrap>ul>li:nth-child(9){background:url(../images/examinee.jpg);cursor:pointer;}
 #hd .container_wrap>ul>li:nth-child(10){background:url(../images/ourcinema.jpg);cursor:pointer;}
-#hd .container_wrap>ul>li:nth-child(11){background:url(../images/Lpay.jpg);}
-#hd .container_wrap>ul>li:nth-child(12){background:url(../images/kiaRed.jpg);} 
+#hd .container_wrap>ul>li:nth-child(11){background:url(../images/Lpay.jpg);cursor:pointer;}
+#hd .container_wrap>ul>li:nth-child(12){background:url(../images/kiaRed.jpg);cursor:pointer;} 
 
 .section{height: 570px;border-top: 1px solid #dedede;border-bottom:1px solid #dedede;}
 .section>.contents{width: 1260px;margin: 0 auto;padding-top: 70px;}
@@ -96,12 +97,55 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .section>.contents>ul>li .card .card-title{font-size:1.5em;font-weight:bold;margin-bottom:10px;}
 hr{background-color:red;}
 
-.section02{height: 240px;background:url(../images/bg_pattern.png);background-attachment:fixed;}
-.contents02{width: 1260px;margin: 0 auto;padding-top: 40px;}
-.contents02>ul{}
-.contents02>ul>li{float: left;margin-right:15px;width: 620px;height: 150px;border-radius:20px;overflow:hidden}
-.contents02>ul>li:first-child{background-color:#F8F9F1;border: 1px solid #CDC197;}
-.contents02>ul>li:last-child{margin-right:0;background:url(../images/bg.png);}
+.section02{background:url(../images/bg_pattern.png);background-attachment:fixed;}
+.section02 .contents02{width: 1260px;margin: 0 auto;padding-top:70px;margin-bottom:70px;}
+.section02 .contents02 ul{width: 1260px;height: 674px;}
+.section02 .contents02 ul li{float: left;}
+.section02 .contents02 ul .snsbanner01{background-color: #3B5998;width: 250px;height: 674px;position: relative;}
+.section02 .contents02 ul .snsbanner01 img{position: absolute;top: 280px;}
+.section02 .contents02 ul .snsbanner02{background:url(../images/lastchristmas_F.jpg);width: 336.67px;height: 337px;position: relative;cursor:pointer;}
+.section02 .contents02 ul .snsbanner03{background-color: #F8F9F1;width: 336.67px;height: 337px;position: relative;}
+.section02 .contents02 ul .snsbanner03:after{
+            content:"";
+            position: absolute;
+            top: 357px;right: 150px;
+            transform:translateY(-50%);
+            border-style:solid;
+            border-width:20px;
+            border-color:#F8F9F1 transparent transparent transparent;
+            display: block;
+        }
+.section02 .contents02 ul li:nth-child(4){background:url(../images/cogi_F.jpg);width: 336.67px;height: 337px;position: relative;cursor:pointer;}
+.section02 .contents02 ul .snsbanner05{background-color: #F8F9F1;width: 336.67px;height: 337px;position: relative;}
+.section02 .contents02 ul li p{padding-top:50px;padding-left: 10px;padding-right: 10px;font-weight:bold;font-size:14px}
+.section02 .contents02 ul li span{display: block;padding-top:100px;padding-left: 240px;font-weight:bold;font-size:14px}
+.section02 .contents02 ul .snsbanner05:after{
+            content:"";
+            position: absolute;
+            top: -20px;right: 150px;
+            transform:translateY(-50%);
+            border-style:solid;
+            border-width:20px;
+            border-color:transparent transparent #F8F9F1 transparent;
+            display: block;
+        }
+.section02 .contents02 ul li:nth-child(6){background:url(../images/engineup_F.jpg);width: 336.67px;height: 337px;cursor:pointer;}
+.section02 .contents02 ul .snsbanner07{background-color: #F8F9F1;width: 336.67px;height: 337px;position: relative;}
+.section02 .contents02 ul .snsbanner07:after{
+            content:"";
+            position: absolute;
+            top: -20px;right: 150px;
+            transform:translateY(-50%);
+            border-style:solid;
+            border-width:20px;
+            border-color:transparent transparent #F8F9F1 transparent;
+            display: block;
+        }
+.contents03{width: 1260px;margin: 0 auto;padding-bottom:70px;}
+.contents03>ul{}
+.contents03>ul>li{float: left;margin-right:15px;width: 620px;height: 150px;border-radius:20px;overflow:hidden}
+.contents03>ul>li:first-child{background-color:#F8F9F1;border: 1px solid #CDC197;}
+.contents03>ul>li:last-child{margin-right:0;background:url(../images/bg.png);}
 .card01 h2{color:#CDC197;text-align: center;}
 .card01 h4{color:#CDC197;text-align: center;font-size:15px;margin-bottom: 8px;}
 .card01 p{color:#7B7B7B;text-align: center;margin-bottom: 9px;font-size:15px;}
@@ -149,6 +193,8 @@ a.btn:hover{background-color:rgba(0,0,0,1);}
 #hd .sub-menuWrap .sub-menu ul li a{display: block;line-height: 60px;text-align: center;}
 
 section#sub_sectionWrap{}
+section#sub_sectionWrap .location{width: 1260px;margin: 0 auto;margin-bottom:40px;}
+section#sub_sectionWrap .location span{font-size:13px;}
 section#sub_sectionWrap .tab_wrap{width: 1260px;margin: 0 auto;margin-bottom: 50px;}
 section#sub_sectionWrap .tab_wrap .tab{text-align: center;padding-left:450px;}
 section#sub_sectionWrap .tab_wrap ul li{float: left;}
