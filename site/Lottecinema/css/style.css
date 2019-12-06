@@ -118,7 +118,8 @@ hr{background-color:red;}
 .section02 .contents02 ul li:nth-child(4){background:url(../images/cogi_F.jpg);width: 336.67px;height: 337px;position: relative;cursor:pointer;}
 .section02 .contents02 ul .snsbanner05{background-color: #F8F9F1;width: 336.67px;height: 337px;position: relative;}
 .section02 .contents02 ul li p{padding-top:50px;padding-left: 10px;padding-right: 10px;font-weight:bold;font-size:14px}
-.section02 .contents02 ul li span{display: block;padding-top:100px;padding-left: 240px;font-weight:bold;font-size:14px}
+.section02 .contents02 ul li .snscard{position: relative;height: 337px;}
+.section02 .contents02 ul li span{display: block;padding-top:100px;padding-left: 240px;font-weight:bold;font-size:14px;position: absolute;bottom: 20px;}
 .section02 .contents02 ul .snsbanner05:after{
             content:"";
             position: absolute;
