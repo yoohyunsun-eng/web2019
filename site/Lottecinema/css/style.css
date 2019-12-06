@@ -8,7 +8,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 #hd #hdSlider img{width: 100%;min-width: 1260px}
 #hd #hdSlider .goodliar{display: block;width: 160px;height: 145px;color: #f00;position: absolute;top: 380px;left: 630px;border-radius:80px}
 #hd #hdSlider span{width: 177px;height: 55px;color:red;position: absolute;top: 700px;left: 870px;cursor:pointer;}
-
+#hd .null{width: 500px;height:120px;display: block;}
 .bx-wrapper {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
@@ -17,6 +17,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     background:none;
     margin-top:0;
     margin-bottom:0;
+    margin: 0 auto;
 }
 .bx-wrapper .bx-pager{
     display: none;
@@ -215,3 +216,12 @@ section#sub_sectionWrap .tab_wrap ul li:nth-child(2){width: 175px;height: 50px;b
 
 .adbanner_wrap{width: 1260px;margin: 0 auto;}
 .adbanner_wrap .adbanner img{margin-bottom:30px;}
+
+/*sub detail page*/
+#sub_sectionWrap #subD_SliderWrap {margin-bottom: 50px;}
+#sub_sectionWrap #subD_SliderWrap .subD_Slider div{position: relative;}
+#sub_sectionWrap #subD_SliderWrap .subD_Slider a{display: block;height: 131px;width: 131px;position: absolute;top:300px;left: 550px;background:url(../images/btnc_play.png);}
+#subD_SliderWrap{width: 1260px;margin: 0 auto;display: block;}
+#Info{width: 1260px;margin: 0 auto;}
+#Info .Info_top .thumb{float: left;}
+#Info .Info_top .thumb img{display: block;}
